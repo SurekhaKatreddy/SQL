@@ -1,16 +1,11 @@
 # SQL
-This is a sample script to create physical schema and insert data into a Next Gen Restraunt system. 
-
-The scripts needs to be executed in the order:
-1. Create schema using DDL statements
-2. Execute the SQL queries to retrieve and analysis the data stored
-
-Note: This schema is deisgned to work on Oracle database. There might be minimal changes in the data types or syntax if you try to run the same on other databases. Overall, this should help you get started on understanding how to model the schema on relational database where data redundancy is not allowed.
+This repo help one to get started with designing the schemas and define queries on top of relational databases. RDBMS or relational databases are primarily designed for transactional systems i.e recording and managing day to day activities and transactions such as production, selling, income and expanses, purchase. As per CAP theorem, RDBMS are usually support availability and are consistent however, they are not suitable for horizontal scaling as they do not support partitioning across multiple nodes.
 
 Key things to know about OLTP i.e transactional systems:
-1. When designing a relational database, we usually go through a process of defining a logical schema where define dependencies or relations (1-1 or 1-n or n-1) between the tables.
+1. When designing a relational database, we usually go through a process of defining a logical schema where define dependencies or relations 
+   (1-1 or 1-n or n-1) between the tables.
 2. Data is not stored in multiple places i.e no redundancy is allowed.
 3. Indexes are defined for better throughput i.e retrieve the output by minimal scanning of the database for faster retrieval of data.
 4. Multiple tables are joined to obtain the required information. 
 
-As per CAP theorem, RDBMS are usually support availability and are consistent however, they are not suitable for horizontal scaling as they do not support partitioning across multiple nodes.
+
